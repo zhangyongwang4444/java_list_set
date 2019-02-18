@@ -6,21 +6,19 @@ import java.util.Set;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
-        HashMap<Integer, Integer> numMap = new HashMap();
+        HashSet<Integer> numSet = new HashSet<>();
 
         for (int num : nums) {
-            if (numMap.containsKey(num)) {
-                numMap.put(num, 2);
+            if (numSet.contains(num)) {
+                numSet.remove(num);
             } else {
-                numMap.put(num, 1);
+                numSet.add(num);
             }
         }
 
-        for (Integer num : numMap.keySet()) {
-            if (numMap.get(num) == 1) {
-                System.out.println(num);
-                return num;
-            }
+        for (Integer num : numSet) {
+            System.out.println(num);
+            return num;
         }
         return 0;
     }

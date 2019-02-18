@@ -50,7 +50,7 @@ public class Main {
 
         SingleNumber singleNumber = new SingleNumber();
 
-        singleNumber.singleNumber(new int[]{1,2,3,4,4,3,1});
+        singleNumber.singleNumber(new int[]{1,2,3,4,4,3,1,55,2});
         System.out.println();
 
     }
