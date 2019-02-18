@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.demo.SingleNumber;
 import com.company.demo.TwoSums;
 
 import java.lang.reflect.Array;
@@ -41,9 +42,16 @@ public class Main {
 
 
         // TwoSums 的测试用例
-        TwoSums test = new TwoSums();
+//        TwoSums test = new TwoSums();
+//
+//        test.twoSums(new ArrayList<>(Arrays.asList(1, 2, 3, 5, 8, 7)), 9);
 
-        test.twoSums(new ArrayList<>(Arrays.asList(1, 2, 3, 5, 8, 7)), 9);
+        // SingleNumber 的测试用例
+
+        SingleNumber singleNumber = new SingleNumber();
+
+        singleNumber.singleNumber(new int[]{1,2,3,4,4,3,1});
+        System.out.println();
 
     }
 }
